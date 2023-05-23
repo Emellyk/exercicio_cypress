@@ -14,6 +14,7 @@ describe('Testes para os botões', () => {
 
     it('Botão delete deve deletar contato', () => {
         cy.get(':nth-child(2) > .sc-gueYoa > .delete').click()
+        cy.get('Emelly Kelm').should('not.exist')
     })
 
     it('Botão editar contato', () => (
